@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: turbine
+
+server:
+  port: 7215
+
+eureka:
+  instance:
+      hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+turbine:
+  app-config: eureka-consumer-ribbon-hystrix
+  cluster-name-expression: "default"
+  combine-host-port: true

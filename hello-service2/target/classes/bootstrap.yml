@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: hello-service2
+  cloud:
+    config:
+      uri: http://localhost:7001
+      label: master
+  server:
+    port: 9002
